@@ -13,20 +13,13 @@ export default function TaskForm({ handleInputChange, saveTask, task }: Props) {
     <article className="p-4 bg-slate-900 rounded-md flex flex-col space-y-5 text-black w-3/12">
       <h3 className="mb-2 font-bold text-2xl text-white">Registrar Task</h3>
       <input
-        name="id"
-        type="number"
-        value={task.id}
-        placeholder="id"
-        className="p-2 rounded-md"
-        onChange={handleInputChange}
-      />
-      <input
         name="title"
         type="text"
         value={task.title}
         placeholder="Title"
         className="p-2 rounded-md"
         onChange={handleInputChange}
+        autoFocus
       />
       <textarea
         name="description"

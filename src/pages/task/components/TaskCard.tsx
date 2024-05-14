@@ -15,7 +15,7 @@ export default function TaskCard({ task, removeTask }: Props) {
             <div className="mt-4">
                 <button
                     className="py-1 px-4 bg-red-500 hover:bg-red-800 duration-300 rounded-full"
-                    onClick={() => { removeTask(task.id) }}
+                    onClick={() => { task.id && removeTask(task.id) }}
                 >
                     Borrar
                 </button>
